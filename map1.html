@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_edb4081039184572bef667372a5641fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_edb4081039184572bef667372a5641fa" ></div>
+        
+</body>
+<script>    
+    
+            var map_edb4081039184572bef667372a5641fa = L.map(
+                "map_edb4081039184572bef667372a5641fa",
+                {
+                    center: [63.5671, 53.6835],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b82ec17a7ac94fb5993d537a9eb6feeb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_edb4081039184572bef667372a5641fa);
+        
+    
+            var marker_aa539b1571fb41108bafb91b7cab3da9 = L.marker(
+                [63.5675, 53.684],
+                {}
+            ).addTo(map_edb4081039184572bef667372a5641fa);
+        
+    
+        var popup_4bd295779fdd48238ee047aee8c76ab0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2844522a5aa34c269821da8953d0b04d = $(`<div id="html_2844522a5aa34c269821da8953d0b04d" style="width: 100.0%; height: 100.0%;">Место разлива</div>`)[0];
+            popup_4bd295779fdd48238ee047aee8c76ab0.setContent(html_2844522a5aa34c269821da8953d0b04d);
+        
+
+        marker_aa539b1571fb41108bafb91b7cab3da9.bindPopup(popup_4bd295779fdd48238ee047aee8c76ab0)
+        ;
+
+        
+    
+    
+            marker_aa539b1571fb41108bafb91b7cab3da9.bindTooltip(
+                `<div>
+                     СДЯВ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_47479977506f4edd96b6484a0d7e0029 = L.circle(
+                [63.5675, 53.684],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.428903731582835, "stroke": true, "weight": 3}
+            ).addTo(map_edb4081039184572bef667372a5641fa);
+        
+    
+            var marker_3ae0703615704ee0847a6ff52f715436 = L.marker(
+                [53.684, 53.684],
+                {}
+            ).addTo(map_edb4081039184572bef667372a5641fa);
+        
+    
+        var popup_1bdd482b39d34368b3c7110a6a777aac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a55bb481dd6042048866dcdd9dc31cab = $(`<div id="html_a55bb481dd6042048866dcdd9dc31cab" style="width: 100.0%; height: 100.0%;">Точка заданного объекта</div>`)[0];
+            popup_1bdd482b39d34368b3c7110a6a777aac.setContent(html_a55bb481dd6042048866dcdd9dc31cab);
+        
+
+        marker_3ae0703615704ee0847a6ff52f715436.bindPopup(popup_1bdd482b39d34368b3c7110a6a777aac)
+        ;
+
+        
+    
+    
+            marker_3ae0703615704ee0847a6ff52f715436.bindTooltip(
+                `<div>
+                     Объект
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
